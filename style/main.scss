@@ -5,7 +5,7 @@
     margin-top: 50px;
 }
 
-#main_section {
+#grid_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -15,9 +15,15 @@
       ". . ."
       ". . .";
     margin-top: 50px;
+    margin: 0 auto;
+    div {
+        height: 100px;
+        width: 100px;
+    }
     #section1 {
         background-image: url(../images/sect1.jpg);
         background-position: center;
+        
         
         filter: blur(4px);
         transition: all .4s ease-in-out;

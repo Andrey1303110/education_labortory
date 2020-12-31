@@ -5,7 +5,7 @@
   margin-top: 50px;
 }
 
-#main_section {
+#grid_section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -15,9 +15,15 @@
   gap: 50px 50px;
       grid-template-areas: ". . ." ". . ." ". . .";
   margin-top: 50px;
+  margin: 0 auto;
 }
 
-#main_section #section1 {
+#grid_section div {
+  height: 100px;
+  width: 100px;
+}
+
+#grid_section #section1 {
   background-image: url(../images/sect1.jpg);
   background-position: center;
   -webkit-filter: blur(4px);
@@ -26,7 +32,7 @@
   transition: all .4s ease-in-out;
 }
 
-#main_section #section1:hover {
+#grid_section #section1:hover {
   -webkit-filter: blur(0px);
           filter: blur(0px);
 }
