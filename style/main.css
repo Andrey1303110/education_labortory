@@ -17,6 +17,20 @@
   margin-top: 50px;
 }
 
+#main_section #section1 {
+  background-image: url(../images/sect1.jpg);
+  background-position: center;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#main_section #section1:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
 #footer_section {
   margin-top: 100px;
   display: -webkit-box;

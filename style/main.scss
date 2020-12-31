@@ -15,6 +15,16 @@
       ". . ."
       ". . .";
     margin-top: 50px;
+    #section1 {
+        background-image: url(../images/sect1.jpg);
+        background-position: center;
+        
+        filter: blur(4px);
+        transition: all .4s ease-in-out;
+        &:hover {
+            filter: blur(0px);
+        }
+    }
 }
 
 #footer_section {
