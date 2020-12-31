@@ -1,0 +1,25 @@
+#main {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#main_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px 50px;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    margin-top: 50px;
+}
+
+#footer_section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    
+}
