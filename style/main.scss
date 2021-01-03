@@ -1,42 +1,106 @@
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+}
+
 #main {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
 }
 
 #grid_section {
-    width: 50%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px 50px;
+    gap: 10% 10%;
     grid-template-areas:
       ". . ."
       ". . ."
       ". . .";
     margin-top: 50px;
     margin: 0 auto;
-    div {
-        height: 100px;
-        width: 100px;
-    }
-    #section1 {
-        background-image: url(../images/sect1.jpg);
+    justify-content: center;
+
+    .section {
+        height: 250px;
+        .text_block {
+            transform: translateY(-350px);
+            transition: transform .7s, color .2s ease-in-out;
+            animation-fill-mode: backwards;
+            color: rgba(0, 0, 0, 0);
+            align-self: center;
+            align-content: center;
+        }
+        &:active .text_block {
+            transform: translateY(-180px);
+            color: rgba(0, 0, 0, 1)
+        }    
+        .img_sect {
+        height: 250px;
         background-position: center;
-        
-        
-        filter: blur(4px);
+        background-repeat: space;     
+        filter: blur(3px) 
+                grayscale(.3);
         transition: all .4s ease-in-out;
-        &:hover {
+        }
+        & .img_sect:hover {
             filter: blur(0px);
+            }
+    }
+    
+    #section1 {
+        .img_sect {
+        background-image: url(../images/sect1.jpg);
         }
     }
-}
+    #section2 {
+        .img_sect {
+        background-image: url(../images/sect2.jpg);
+        }
+    }
+    #section3 {
+        .img_sect {
+        background-image: url(../images/sect3.jpg);
+        }
+    }
+    #section4 {
+        .img_sect {
+        background-image: url(../images/sect4.jpg);
+        }
+    }
+    #section5 {
+        .img_sect {
+        background-image: url(../images/sect5.jpg);
+        }
+    }
+    #section6 {
+        .img_sect {
+        background-image: url(../images/sect6.jpg);
+        }
+    }
+    #section7 {
+        .img_sect {
+        background-image: url(../images/sect7.jpg);
+        }
+    }
+    #section8 {
+        .img_sect {
+        background-image: url(../images/sect8.jpg);
+        }
+    }
+    #section9 {
+        .img_sect {
+        background-image: url(../images/sect9.jpg);
+        }
+    }
+}   
 
 #footer_section {
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
 }
